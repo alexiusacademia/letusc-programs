@@ -3,6 +3,9 @@
     Ramesh. Dearness allowance is 40% or basic salary and 
     house rent allowance is 20% of basic salary. 
     Write a program to calculate his gross salary.
+
+    Author: Alexius Academia
+    Date:   October 7, 2024
 */
 #include <stdio.h>
 
