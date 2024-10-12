@@ -13,6 +13,7 @@
 #include <stdbool.h>
 #define ISLOWER(ch) (ch >= 97 && ch <= 122)
 #define ISUPPER(ch) (ch >= 65 && ch <= 90)
+#define ISALPHA(ch) (ISLOWER(ch) || ISUPPER(ch))
 #define BIGGER(n1, n2) (n1 > n2 ? n1 : n2)
 
 int main(int argc, char const *argv[])
@@ -34,11 +35,7 @@ int main(int argc, char const *argv[])
         printf("Character is uppercase.\n");
 
     // Test if alphabet
-    bool is_alphabet;
-    if (is_lower || is_upper)
-        is_alphabet = true;
-    else
-        is_alphabet = false;
+    bool is_alphabet = ISALPHA(in);
     
     if (is_alphabet)
         printf("The character is an alphabet.\n");
